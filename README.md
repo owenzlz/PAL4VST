@@ -6,9 +6,9 @@
 
 **Perceptual Artifacts Localization for Image Synthesis Tasks**\
 *International Conference on Computer Vision (ICCV), 2023*\
-Zhang et al.
-<!-- Lingzhi Zhang, Zhengjie Xu, Connelly Barnes, Yuqian Zhou, Qing Liu, He Zhang, Sohrab Amirghodsi, Zhe Lin, Eli Shechtman, Jianbo Shi -->
-<!-- [Lingzhi Zhang*](https://owenzlz.github.io/), [Zhengjie Xu*](https://scholar.google.com/citations?user=kWdwbUYAAAAJ&hl=en), [Simon Stent](https://scholar.google.com/citations?user=f3aij5UAAAAJ&hl=en), [Jianbo Shi](https://www.cis.upenn.edu/~jshi/) (* indicates equal contribution) -->
+<!-- Zhang et al. -->
+Lingzhi Zhang, Zhengjie Xu, Connelly Barnes, Yuqian Zhou, Qing Liu, He Zhang, Sohrab Amirghodsi, Zhe Lin, Eli Shechtman, Jianbo Shi
+1. Adobe; 2. UPenn
 
 This paper presents a comprehensive study of Perceptual Artifacts Localization on multiple synthesis tasks. 
 
