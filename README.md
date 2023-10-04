@@ -54,8 +54,6 @@ For more information, please feel free to refer to MMSegmentation: https://mmseg
 
 ## Quick Usage
 
-We provide a simple way to use our 'unified' model, so you can do some quick testing without worrying about environment. The randomly sampled test images can be found in ./demo_test_data folder. 
-
 Download torchscript checkpoint
 ([swin-large_upernet_unified_512x512](https://drive.google.com/file/d/1alICAkY8sjr-gwWknAEQjIKDkdPUPyKd/view?usp=sharing)), and place it under ./deployment/pal4vst/swin-large_upernet_unified_512x512/. 
 
@@ -70,6 +68,13 @@ python test_torchscript.py \
 
 This checkpoint is trained on the unified data, and produces reasonable predictions to all synthesis tasks, except for shadow removal which requires a specialist model as reported in the paper. More checkpoints will come soon. 
 
+- Demo Test Images
+```bash
+cd demo_test_data
+ls
+```
+
+We randomly sampled ten test images per synthesis tasks, in case you want to quickly try it out. 
 
 ### Datasets
 Coming soon!
