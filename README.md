@@ -17,7 +17,7 @@ This paper presents a comprehensive study of Perceptual Artifacts Localization o
 - NVIDIA GPU + CUDA CuDNN
 
 **Table of Contents:**<br>
-1. [Quick Usage](#quick_usage) - quick usage on videos<br>
+1. [Quick Usage](#quick_usage) - quick usage with torchscript<br>
 2. [Setup](#setup) - download pretrained models and resources
 3. [Datasets](#datasets) - download our train/val/test artifacts datasets
 4. [Checkpoints](#checkpoints) - download the checkpoints for all our models
