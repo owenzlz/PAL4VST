@@ -9,7 +9,7 @@
 Lingzhi Zhang, Zhengjie Xu, Connelly Barnes, Yuqian Zhou, Qing Liu, He Zhang, Sohrab Amirghodsi, Zhe Lin, Eli Shechtman, Jianbo Shi
 <!-- [Lingzhi Zhang*](https://owenzlz.github.io/), [Zhengjie Xu*](https://scholar.google.com/citations?user=kWdwbUYAAAAJ&hl=en), [Simon Stent](https://scholar.google.com/citations?user=f3aij5UAAAAJ&hl=en), [Jianbo Shi](https://www.cis.upenn.edu/~jshi/) (* indicates equal contribution) -->
 
-Our main goal is to provide a tool for better hand-object segmentation on the in-the-wild egocentric videos. 
+This paper presents a comprehensive study of Perceptual Artifacts Localization on multiple synthesis tasks. 
 
 ## Prerequisites
 - Linux
@@ -32,9 +32,16 @@ git clone https://github.com/owenzlz/PAL4VST
 
 - Install dependencies:
 ```bash
-pip install -r requirements.txt
+conda create --name pal4vst python=3.8 -y
+conda activate pal4vst
+pip install torch torchvision
 pip install -U openmim
-mim install mmcv-full==1.6.0
+mim install mmengine
+mim install "mmcv>=2.0.0"
+pip install timm==0.6.5
+pip install scikit-image
+pip install -U openmim && mim install "mmpretrain>=1.0.0rc8"
+pip install mmdeploy==1.3.0
 cd mmsegmentation
 pip install -v -e .
 ```
