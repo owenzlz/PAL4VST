@@ -14,9 +14,9 @@
 /mmsegmentation/debug.py
 /mmsegmentation/.git
 
-# deployment checkpoints
-deployment/pal4vst/swin-large_upernet_unified_512x512/end2end.pt
 
+deployment/pal4vst/swin-large_upernet_unified_512x512/end2end.pt
+/mmdeploy/.git
 
 copy_files_from_AdobePAL.sh
 

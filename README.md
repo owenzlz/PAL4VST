@@ -50,10 +50,19 @@ pip install -v -e .
 ```
 For more information, please feel free to refer to MMSegmentation: https://mmsegmentation.readthedocs.io/en/latest/
 
+
+
 <a name="quick_usage"/>
 
 ## Quick Usage
-- Quick Inference with a Torchscript (No need to set up env!)
+
+- Download torchscript checkpoint
+```bash
+
+```
+Place this checkpoint under "./deployment/pal4vst/swin-large_upernet_unified_512x512/"
+
+- Quick Inference with torchscript (No need to set up env!)
 ```bash
 python test_torchscript.py \
        --img_file ./demo_test_data/stylegan2_ffhq/images/seed0417.jpg \
