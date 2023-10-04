@@ -4,7 +4,7 @@
 
 <img src="https://github.com/owenzlz/PAL4VST/blob/project_page/resources/pal4vst.png" style="width:800px;">
 
-**Perceptual Artifacts Localization for Image Synthesis Tasks**\
+[**Perceptual Artifacts Localization for Image Synthesis Tasks**](https://openaccess.thecvf.com/content/ICCV2023/papers/Zhang_Perceptual_Artifacts_Localization_for_Image_Synthesis_Tasks_ICCV_2023_paper.pdf)\
 *International Conference on Computer Vision (ICCV), 2023*\
 Lingzhi Zhang, Zhengjie Xu, Connelly Barnes, Yuqian Zhou, Qing Liu, He Zhang, Sohrab Amirghodsi, Zhe Lin, Eli Shechtman, Jianbo Shi
 
