@@ -1,0 +1,14 @@
+*.pt
+*.pth
+
+/data
+/mmsegmentation/pretrain
+/mmsegmentation/work_dirs
+
+# deployment checkpoints
+/deployment/pal4vst
+
+
+
+
+
