@@ -2,12 +2,23 @@
 *.pth
 
 /data
+
 /mmsegmentation/pretrain
 /mmsegmentation/work_dirs
+/mmsegmentation/configs/metacaf
+/mmsegmentation/train_debug.sh
+/mmsegmentation/train_metacaf.sh
+/mmsegmentation/eval_all.py
+/mmsegmentation/eval_all.sh
+/mmsegmentation/test_metcaf.sh
+/mmsegmentation/debug.py
+/mmsegmentation/.git
 
 # deployment checkpoints
 /deployment/pal4vst
 
+
+copy_files_from_AdobePAL.sh
 
 
 
