@@ -21,8 +21,14 @@ This paper presents a comprehensive study of Perceptual Artifacts Localization o
 2. [Setup](#setup) - download pretrained models and resources
 3. [Datasets](#datasets) - download our train/val/test artifacts datasets
 4. [Checkpoints](#checkpoints) - download the checkpoints for all our models
-5. [Inference](#inference) - quick usage on images
+5. [Inference](#inference) - inference with models/data
+6. [Training](#training) - training scripts
 
+## Quick Usage
+- Quick Inference with a Torchscript
+```bash
+python .. 
+```
 
 ## Setup
 - Clone this repo:
@@ -45,7 +51,7 @@ pip install mmdeploy==1.3.0
 cd mmsegmentation
 pip install -v -e .
 ```
-For more information, please refer to MMSegmentation: https://mmsegmentation.readthedocs.io/en/latest/
+For more information, please feel free to refer to MMSegmentation: https://mmsegmentation.readthedocs.io/en/latest/
 
 <a name="datasets"/>
 
@@ -55,9 +61,11 @@ For more information, please refer to MMSegmentation: https://mmsegmentation.rea
 bash download_datasets.sh
 ```
 
+(Comming soon)
+
 After downloading, the dataset is structured as follows: 
 ```bash
-- [egohos dataset root]
+- [pal4vst dataset root]
     |- train
         |- image
         |- label
@@ -76,28 +84,13 @@ After downloading, the dataset is structured as follows:
         |- contact
 ```
 
-In each label image, the category ids are referred as below. In the contact labels, 'ones' indicate the dense contact region.  
-```bash
-0 -> background
-1 -> left hand
-2 -> right hand
-3 -> 1st order interacting object by left hand
-4 -> 1st order interacting object by right hand
-5 -> 1st order interacting object by both hands
-6 -> 2nd order interacting object by left hand
-7 -> 2nd order interacting object by right hand
-8 -> 2nd order interacting object by both hands
-```
+
 
 <a name="checkpoints"/>
 
 ## Checkpoints
 
-- Download checkponts and config files:
-```bash
-bash download_checkpoints.sh
-```
-
+(Comming soon)
 
 <a name="inference_on_images"/>
 
