@@ -10,7 +10,7 @@
 /mmsegmentation/train_metacaf.sh
 /mmsegmentation/eval_all.py
 /mmsegmentation/eval_all.sh
-/mmsegmentation/test_metcaf.sh
+/mmsegmentation/test_metacaf.sh
 /mmsegmentation/debug.py
 /mmsegmentation/.git
 
