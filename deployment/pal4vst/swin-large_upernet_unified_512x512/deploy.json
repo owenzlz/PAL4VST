@@ -1,0 +1,16 @@
+{
+    "version": "1.3.0",
+    "task": "Segmentor",
+    "models": [
+        {
+            "name": "uper",
+            "net": "end2end.pt",
+            "weights": "",
+            "backend": "torchscript",
+            "precision": "FP32",
+            "batch_size": 1,
+            "dynamic_shape": false
+        }
+    ],
+    "customs": []
+}

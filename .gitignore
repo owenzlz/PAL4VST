@@ -15,7 +15,7 @@
 /mmsegmentation/.git
 
 # deployment checkpoints
-/deployment/pal4vst
+deployment/pal4vst/swin-large_upernet_unified_512x512/end2end.pt
 
 
 copy_files_from_AdobePAL.sh

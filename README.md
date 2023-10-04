@@ -20,10 +20,10 @@ This paper presents a comprehensive study of Perceptual Artifacts Localization o
 **Table of Contents:**<br>
 1. [Setup](#setup) - download pretrained models and resources
 2. [Quick Usage](#quick_usage) - quick usage with torchscript
-3. [Datasets](#datasets) - download our train/val/test artifacts datasets (comming soon)
-4. [Checkpoints](#checkpoints) - download the checkpoints for all our models (comming soon)
-5. [Inference](#inference) - inference with models/data (comming soon)
-6. [Training](#training) - training scripts (comming soon)
+3. [Datasets](#datasets) - download our train/val/test artifacts datasets (coming soon)
+4. [Checkpoints](#checkpoints) - download the checkpoints for all our models (coming soon)
+5. [Inference](#inference) - inference with models/data (coming soon)
+6. [Training](#training) - training scripts (coming soon)
 
 <a name="setup"/>
 
@@ -53,11 +53,14 @@ For more information, please feel free to refer to MMSegmentation: https://mmseg
 <a name="quick_usage"/>
 
 ## Quick Usage
-- Quick Inference with a Torchscript
+- Quick Inference with a Torchscript (No need to set up env!)
 ```bash
-python .. 
+python test_torchscript.py \
+       --img_file ./demo_test_data/stylegan2_ffhq/images/seed0417.jpg \
+       --torchscript_file ./deployment/pal4vst/swin-large_upernet_unified_512x512/end2end.pt \
+       --out_pal_file pal.png \
+       --out_vis_file img_with_pal.jpg
 ```
-
 
 
 

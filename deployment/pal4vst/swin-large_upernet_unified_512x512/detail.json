@@ -1,0 +1,29 @@
+{
+    "version": "1.3.0",
+    "codebase": {
+        "task": "Segmentation",
+        "codebase": "mmseg",
+        "version": "1.1.1",
+        "pth": "/sensei-fs/users/lingzzha/projects/PAL4VST2/mmsegmentation/work_dirs/unified/best_mIoU_iter_7200.pth",
+        "config": "../mmsegmentation/work_dirs/pal4vst/swin-large_upernet_unified_512x512/swin-large_upernet_unified_512x512.py"
+    },
+    "codebase_config": {
+        "type": "mmseg",
+        "task": "Segmentation"
+    },
+    "onnx_config": {
+        "type": "torchscript",
+        "save_file": "end2end.pt",
+        "input_names": [
+            "input"
+        ],
+        "output_names": [
+            "output"
+        ],
+        "input_shape": null
+    },
+    "backend_config": {
+        "type": "torchscript"
+    },
+    "calib_config": {}
+}
