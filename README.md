@@ -56,9 +56,8 @@ For more information, please feel free to refer to MMSegmentation: https://mmseg
 
 We provide a simple way to use our 'unified' model, so you can do some quick testing without worrying about environment. The randomly sampled test images can be found in ./demo_test_data folder. 
 
-- Download torchscript checkpoint
-access: [swin-large_upernet_unified_512x512](https://drive.google.com/file/d/1alICAkY8sjr-gwWknAEQjIKDkdPUPyKd/view?usp=sharing)
-Place this checkpoint under ./deployment/pal4vst/swin-large_upernet_unified_512x512/
+Download torchscript checkpoint
+([swin-large_upernet_unified_512x512](https://drive.google.com/file/d/1alICAkY8sjr-gwWknAEQjIKDkdPUPyKd/view?usp=sharing)), and place it under ./deployment/pal4vst/swin-large_upernet_unified_512x512/
 
 ```
 Place this checkpoint under ./deployment/pal4vst/swin-large_upernet_unified_512x512/
