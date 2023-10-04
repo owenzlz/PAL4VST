@@ -3,23 +3,22 @@
 
 /data
 
-/mmsegmentation/pretrain
-/mmsegmentation/work_dirs
-/mmsegmentation/configs/metacaf
-/mmsegmentation/train_debug.sh
-/mmsegmentation/train_metacaf.sh
-/mmsegmentation/eval_all.py
-/mmsegmentation/eval_all.sh
-/mmsegmentation/test_metcaf.sh
-/mmsegmentation/debug.py
-/mmsegmentation/.git
+/mmsegmentation2/pretrain
+/mmsegmentation2/work_dirs
+/mmsegmentation2/configs/metacaf
+/mmsegmentation2/train_debug.sh
+/mmsegmentation2/train_metacaf.sh
+/mmsegmentation2/eval_all.py
+/mmsegmentation2/eval_all.sh
+/mmsegmentation2/test_metcaf.sh
+/mmsegmentation2/debug.py
+/mmsegmentation2/.git
 
 # deployment checkpoints
 /deployment/pal4vst
 
 
 copy_files_from_AdobePAL.sh
-
 
 
 
