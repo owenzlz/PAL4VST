@@ -99,7 +99,7 @@ img_tensor = prepare_input(np.array(Image.open(img_file).resize((512, 512))), de
 pal = model(img_tensor).cpu().data.numpy()[0][0] # prediction: Perceptual Artifacts Localization (PAL)
 ```
 
-- Test over all test images
+- Test over all images in demo_test_data folder
 ```bash
 python test_torchscript_all.py
 ```
