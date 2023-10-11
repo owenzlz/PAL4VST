@@ -51,6 +51,13 @@ For more information, please feel free to refer to MMSegmentation: https://mmseg
 
 # Test images
 
+We randomly sampled ten test images per synthesis tasks, in case you want to quickly try it out. Please check "./demo_test_data".
+
+```bash
+- demo_test_data
+    |- anyresegan
+    |- cvton
+```
 
 <a name="quick_usage"/>
 
@@ -70,13 +77,6 @@ python test_torchscript.py \
 
 This checkpoint is trained on the unified data, and produces reasonable predictions to all synthesis tasks, except for shadow removal which requires a specialist model as reported in the paper. More checkpoints will come soon. 
 
-- Demo Test Images
-```bash
-cd demo_test_data
-ls
-```
-
-We randomly sampled ten test images per synthesis tasks, in case you want to quickly try it out. 
 
 ### Datasets
 Coming soon!
