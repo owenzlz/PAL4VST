@@ -103,20 +103,20 @@ Note: This checkpoint is trained on the unified data, and produces reasonable pr
 Coming soon!
 
 | Header1 | Header2 | Header3 | Header1 | Header2 | Header3 | Header1 | Header2 | Header3 |
-|--------|--------|--------|
-| Value1a | Value2a | Value3a |
-| Value1b | Value2b | Value3b |
+|--------|--------|--------|--------|--------|--------|--------|--------|--------|
+| Value1a | Value2a | Value3a | Value1a | Value2a | Value3a | Value1a | Value2a | Value3a |
+| Value1b | Value2b | Value3b | Value1a | Value2a | Value3a | Value1a | Value2a | Value3a |
 
 
 ## Datasets
 Coming soon!
 
 
-## Applications - Auto Artifacts Refinement
+## Application - Auto Artifacts Refinement
 
 
 
-## Applications - Auto Curation
+## Application - Auto Curation
 
 
 
