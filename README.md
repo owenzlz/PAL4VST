@@ -96,7 +96,12 @@ img_tensor = prepare_input(np.array(Image.open(img_file).resize((512, 512))), de
 pal = model(img_tensor).cpu().data.numpy()[0][0] # prediction: Perceptual Artifacts Localization (PAL)
 ```
 
-Note: This checkpoint is trained on the unified data, and produces reasonable predictions to all synthesis tasks, except for shadow removal which requires a specialist model as reported in the paper. Specialist checkpoints will come soon. 
+- Test over All Test Images
+```bash
+python test_torchscript_all.py
+```
+
+**Note**: This checkpoint is trained on the unified data, and produces reasonable predictions to all synthesis tasks, except for shadow removal which requires a specialist model as reported in the paper. You will need a Shadow specialist checkpoint. Specialist checkpoints can be downloaded below. 
 
 
 ## Checkpoints
@@ -114,11 +119,11 @@ Coming soon!
 
 
 ## Downstream Application - Artifacts Refinement
+Coming soon!
 
 
-
-## Downstream Application - Quality Curation
-
+## Downstream Application - Image Curation
+Coming soon!
 
 
 
