@@ -53,11 +53,11 @@ For more information, please feel free to refer to MMSegmentation: https://mmseg
 
 ## Test images
 
-We randomly sampled 10 test images per synthesis tasks, in case you want to quickly try it out. Please check "./demo_test_data".
+We randomly sampled 10 test images per synthesis tasks, in case you want to quickly try it out. Please check "./demo_test_data". The conditional inputs (i.e. prompt/edge/segmentation) are included if any. 
 
 ```bash
 - demo_test_data
-    |- anyresegan
+    |- anyresgan
     |- cvton
     |- edge2image
     |- stylegan2_ffqh
@@ -110,9 +110,8 @@ We only released the 'unified' and 'shadow removal' checkpoints, due to extensiv
 
 | Model Name | Torchscript | Pytorch |
 |:--------:|:--------:|:--------:|
-| anyresgan | Value2a | Value3a |
-| cvton | Value2b | Value3b |
 | unified | Value2b | Value3b |
+| shadow removal | Value2b | Value3b |
 
 
 ## Datasets
@@ -121,6 +120,7 @@ Coming soon!
 
 ## Application 1 - Artifacts Refinement
 Coming soon!
+
 
 
 ## Application 2 - Image Curation

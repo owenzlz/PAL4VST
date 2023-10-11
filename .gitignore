@@ -20,5 +20,17 @@ deployment/pal4vst/swin-large_upernet_unified_512x512/end2end.pt
 
 copy_files_from_AdobePAL.sh
 
-/data
+/demo_test_data/anyresgan/vis_pal
+/demo_test_data/cvton/vis_pal
+/demo_test_data/edge2image/vis_pal
+/demo_test_data/latent_composition/vis_pal
+/demo_test_data/ldm/vis_pal
+/demo_test_data/mask2image/vis_pal
+/demo_test_data/portrait_shadow_removal/vis_pal
+/demo_test_data/stylegan2_animal/vis_pal
+/demo_test_data/stylegan2_ffhq/vis_pal
+/demo_test_data/stylegan2_human/vis_pal
+/demo_test_data/super_resolution/vis_pal
+/demo_test_data/text2image_dalle/vis_pal
+/demo_test_data/text2image_sd/vis_pal
 
