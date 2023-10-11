@@ -49,7 +49,7 @@ pip install -v -e .
 For more information, please feel free to refer to MMSegmentation: https://mmsegmentation.readthedocs.io/en/latest/
 
 
-# Test images
+## Test images
 
 We randomly sampled ten test images per synthesis tasks, in case you want to quickly try it out. Please check "./demo_test_data".
 
@@ -81,17 +81,17 @@ python test_torchscript.py \
 Note: This checkpoint is trained on the unified data, and produces reasonable predictions to all synthesis tasks, except for shadow removal which requires a specialist model as reported in the paper. Specialist checkpoints will come soon. 
 
 
-### Datasets
+## Datasets
 Coming soon!
 
 
 
-### Checkpoints
+## Checkpoints
 Coming soon!
 
 
 
-### Training
+## Training
 Coming soon!
 
 
