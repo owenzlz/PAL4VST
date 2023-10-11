@@ -106,7 +106,7 @@ python test_torchscript_all.py
 
 ## Checkpoints
 
-We only released the 'unified' and 'shadow removal' checkpoints, due to extensive number of models. As discussed in the paper, this 'unified' have similar performance to all specialist models, except for 'shadow removal' task. If you need other specialist checkpoints, please reach out to me (zlz@seas.upenn.edu).
+We only released the 'unified' and 'shadow removal' checkpoints, due to extensive number of models. As discussed in the paper, this 'unified' has similar performance to all specialist models on individual tasks, except for 'shadow removal' task. If you need other specialist checkpoints, please reach out to me (zlz@seas.upenn.edu).
 
 | Model Name | Torchscript | Pytorch |
 |:--------:|:--------:|:--------:|
