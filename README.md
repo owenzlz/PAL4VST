@@ -57,6 +57,9 @@ We randomly sampled ten test images per synthesis tasks, in case you want to qui
 - demo_test_data
     |- anyresegan
     |- cvton
+    |- edge2image
+    |- stylegan2_ffqh
+    |- ...
 ```
 
 <a name="quick_usage"/>
@@ -75,7 +78,7 @@ python test_torchscript.py \
        --out_vis_file img_with_pal.jpg
 ```
 
-This checkpoint is trained on the unified data, and produces reasonable predictions to all synthesis tasks, except for shadow removal which requires a specialist model as reported in the paper. More checkpoints will come soon. 
+Note: This checkpoint is trained on the unified data, and produces reasonable predictions to all synthesis tasks, except for shadow removal which requires a specialist model as reported in the paper. Specialist checkpoints will come soon. 
 
 
 ### Datasets
