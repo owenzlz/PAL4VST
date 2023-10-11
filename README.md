@@ -89,8 +89,11 @@ import torch
 
 
 device = 0
-model = torch.load('./deployment/pal4vst/swin-large_upernet_unified_512x512/end2end.pt').to(args.device)
-img = np.array(Image.open('./demo_test_data/stylegan2_ffhq/images/seed0417.jpg').resize((512, 512)))
+torchscript_file = './deployment/pal4vst/swin-large_upernet_unified_512x512/end2end.pt'
+img_file = './demo_test_data/stylegan2_ffhq/images/seed0417.jpg'
+
+model = torch.load(torchscript_file).to(device)
+img = np.array(Image.open(img_file).resize((512, 512)))
 img_tensor = prepare_input(img, device)
 pal = model(img_tensor)
 ```
