@@ -95,7 +95,7 @@ img_file = './demo_test_data/stylegan2_ffhq/images/seed0417.jpg'
 model = torch.load(torchscript_file).to(device)
 img = np.array(Image.open(img_file).resize((512, 512)))
 img_tensor = prepare_input(img, device)
-# predicted 
+# prediction: Perceptual Artifacts Localization (PAL)
 pal = model(img_tensor).cpu().data.numpy()[0][0]
 ```
 
