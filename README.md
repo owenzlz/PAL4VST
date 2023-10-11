@@ -99,20 +99,30 @@ pal = model(img_tensor).cpu().data.numpy()[0][0] # prediction: Perceptual Artifa
 Note: This checkpoint is trained on the unified data, and produces reasonable predictions to all synthesis tasks, except for shadow removal which requires a specialist model as reported in the paper. Specialist checkpoints will come soon. 
 
 
+## Checkpoints
+Coming soon!
+
+| Header1 | Header2 | Header3 |
+|--------|--------|--------|
+| Value1a | Value2a | Value3a |
+| Value1b | Value2b | Value3b |
+
+
 ## Datasets
 Coming soon!
 
 
-
-## Checkpoints
-Coming soon!
-
+## Applications
 
 
 ## Training
-Coming soon!
 
+An examplar training command line (multi-GPU training)
+```bash
+./tools/dist_train.sh configs/pal4vst/swin-large_upernet_unified_512x512.py 8 --work-dir work_dirs/pal4vst/swin-large_upernet_unified_512x512
+```
 
+Note: All checkpoints are trained in MMSeg 0x codebase. We haven't retrained the models after codebase update (MMSeg 1x).
 
 ### Citation
 If you use this code for your research, please cite our paper:
