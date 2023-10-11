@@ -149,8 +149,8 @@ If you use this code for your research, please cite our paper:
 }
 ```
 
-This work is inspired by our previous work: 
-```bash
+This work is inspired by our previous ECCV 22' paper: 
+```
 @inproceedings{zhang2022perceptual,
   title={Perceptual artifacts localization for inpainting},
   author={Zhang, Lingzhi and Zhou, Yuqian and Barnes, Connelly and Amirghodsi, Sohrab and Lin, Zhe and Shechtman, Eli and Shi, Jianbo},
