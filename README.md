@@ -122,9 +122,20 @@ Coming soon!
 
 
 ## Application 1 - Artifacts Refinement
-Coming soon!
 
+We implemented SD-XL inpainter to refine artifacts detected by our PAL model. 
 
+Refine artifacts (PAL) with SD-XL inpainter
+```bash
+python refine_artifacts.py \
+       --img_file ./demo_test_data/mask2image/images/000000483531.jpg \
+       --torchscript_file ./deployment/pal4vst/swin-large_upernet_unified_512x512/end2end.pt \
+       --out_refine_file refine.jpg \
+       --num_inference_steps 75 \
+       --high_noise_frac 0.5
+```
+
+**Note**: In the paper, we tried DALL-E inpainting, which gives better results. However, since it's not free, we offer SD-XL as an alternative option. 
 
 ## Application 2 - Image Curation
 Coming soon!
