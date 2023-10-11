@@ -139,7 +139,7 @@ python refine_artifacts.py \
 
 ## Application 2 - Image Curation
 
-Given a folder of generated images, our PAL model can rank their quality by the size of detected artifacts region. 
+Given a folder of generated images, our PAL model can rank their quality using the area of detected artifacts region. 
 
 Rank a folder of images
 ```bash
