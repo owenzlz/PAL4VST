@@ -102,7 +102,7 @@ Note: This checkpoint is trained on the unified data, and produces reasonable pr
 ## Checkpoints
 Coming soon!
 
-| Header1 | Header2 | Header3 |
+| Header1 | Header2 | Header3 | Header1 | Header2 | Header3 | Header1 | Header2 | Header3 |
 |--------|--------|--------|
 | Value1a | Value2a | Value3a |
 | Value1b | Value2b | Value3b |
@@ -112,7 +112,13 @@ Coming soon!
 Coming soon!
 
 
-## Applications
+## Applications - Auto Artifacts Refinement
+
+
+
+## Applications - Auto Curation
+
+
 
 
 ## Training
