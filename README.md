@@ -134,7 +134,7 @@ An examplar training command line (multi-GPU training)
 ./tools/dist_train.sh configs/pal4vst/swin-large_upernet_unified_512x512.py 8 --work-dir work_dirs/pal4vst/swin-large_upernet_unified_512x512
 ```
 
-Note: All checkpoints are trained in MMSeg 0x codebase. We haven't retrained the models after codebase update (MMSeg 1x).
+**Note**: All checkpoints are trained in MMSeg 0x codebase. We haven't retrained/reproduced the models after the codebase update (MMSeg 0x &rarr; MMSeg 1x).
 
 ### Citation
 If you use this code for your research, please cite our paper:
