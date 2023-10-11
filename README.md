@@ -92,10 +92,8 @@ torchscript_file = './deployment/pal4vst/swin-large_upernet_unified_512x512/end2
 img_file = './demo_test_data/stylegan2_ffhq/images/seed0417.jpg'
 
 model = torch.load(torchscript_file).to(device)
-img = np.array(Image.open(img_file).resize((512, 512)))
-img_tensor = prepare_input(img, device)
-# prediction: Perceptual Artifacts Localization (PAL)
-pal = model(img_tensor).cpu().data.numpy()[0][0]
+img_tensor = prepare_input(np.array(Image.open(img_file).resize((512, 512))), device)
+pal = model(img_tensor).cpu().data.numpy()[0][0] # prediction: Perceptual Artifacts Localization (PAL)
 ```
 
 Note: This checkpoint is trained on the unified data, and produces reasonable predictions to all synthesis tasks, except for shadow removal which requires a specialist model as reported in the paper. Specialist checkpoints will come soon. 
