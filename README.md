@@ -102,21 +102,22 @@ Note: This checkpoint is trained on the unified data, and produces reasonable pr
 ## Checkpoints
 Coming soon!
 
-| Header1 | Header2 | Header3 | Header1 | Header2 | Header3 | Header1 | Header2 | Header3 |
-|--------|--------|--------|--------|--------|--------|--------|--------|--------|
-| Value1a | Value2a | Value3a | Value1a | Value2a | Value3a | Value1a | Value2a | Value3a |
-| Value1b | Value2b | Value3b | Value1a | Value2a | Value3a | Value1a | Value2a | Value3a |
+| Name | Torchscript | Pytorch |
+|--------|--------|--------|
+| anyresgan | Value2a | Value3a |
+| cvton | Value2b | Value3b |
+| unified | Value2b | Value3b |
 
 
 ## Datasets
 Coming soon!
 
 
-## Application - Auto Artifacts Refinement
+## Downstream Application - Artifacts Refinement
 
 
 
-## Application - Auto Curation
+## Downstream Application - Quality Curation
 
 
 
