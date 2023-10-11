@@ -34,3 +34,6 @@ copy_files_from_AdobePAL.sh
 /demo_test_data/text2image_dalle/vis_pal
 /demo_test_data/text2image_sd/vis_pal
 
+debug.py
+
+

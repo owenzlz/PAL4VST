@@ -46,6 +46,9 @@ pip install -U openmim && mim install "mmpretrain>=1.0.0rc8"
 pip install mmdeploy==1.3.0
 cd mmsegmentation
 pip install -v -e .
+
+pip install transformers
+pip install --upgrade diffusers[torch]
 ```
 For more information, please feel free to refer to MMSegmentation: https://mmsegmentation.readthedocs.io/en/latest/
 
@@ -133,6 +136,14 @@ Coming soon!
 An examplar training command line (multi-GPU training)
 ```bash
 ./tools/dist_train.sh configs/pal4vst/swin-large_upernet_unified_512x512.py 8 --work-dir work_dirs/pal4vst/swin-large_upernet_unified_512x512
+```
+
+## Testing 
+
+Inference using Pytorch model (which should have similar performance to Torchscript model). 
+
+```bash
+
 ```
 
 **Note**: All checkpoints are trained in MMSeg 0x codebase. We haven't retrained/reproduced the models after the codebase update (MMSeg 0x &rarr; MMSeg 1x).
