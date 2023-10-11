@@ -49,6 +49,8 @@ pip install -v -e .
 For more information, please feel free to refer to MMSegmentation: https://mmsegmentation.readthedocs.io/en/latest/
 
 
+# Test images
+
 
 <a name="quick_usage"/>
 

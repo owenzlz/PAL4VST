@@ -65,7 +65,7 @@ if __name__ == '__main__':
     parser.add_argument('--alpha', type=float, default=0.3)
     parser.add_argument('--half_precision', action="store_true", help="whether to use half precision")
     args = parser.parse_args()
-
+    
     model = torch.load(args.torchscript_file).to(args.device)
     img = np.array(Image.open(args.img_file).resize((512, 512)))
     img_tensor = prepare_input(img, args.device)
