@@ -135,11 +135,16 @@ python refine_artifacts.py \
        --high_noise_frac 0.5
 ```
 
-**Note**: In the paper, we tried DALL-E inpainting, which gives better results. However, since it's not free, we offer SD-XL as an alternative option. 
+**Note**: In the paper, we tried DALL-E 2 inpainter, which gives better results. However, since DALL-E 2 not free, we offer SD-XL as an alternative option. 
 
 ## Application 2 - Image Curation
-Coming soon!
 
+Given a folder of generated images, our PAL model can rank their quality by the size of detected artifacts region. 
+
+Rank a folder of images
+```bash
+
+```
 
 
 ## Training
