@@ -81,7 +81,7 @@ python test_torchscript.py \
 ```
 
 - Alternatively, a Snippet of Inference Code
-```bash
+```
 from utils import *
 from PIL import Image
 import numpy as np 
@@ -163,8 +163,11 @@ This work is inspired by our previous ECCV 22' paper:
 
 ## Acknowledgement
 
-We thank all the authors who their open-sourced research codes, which we used to generate the training data for this paper. 
+We thank all the authors who open-sourced the research codes, which enables us to generate the images. 
 
 StyleGAN: 
+
 StyleGAN-Human:
+
 Latent Diffusion Models: 
+
