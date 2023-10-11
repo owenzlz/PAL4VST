@@ -80,7 +80,7 @@ python test_torchscript.py \
        --out_vis_file img_with_pal.jpg
 ```
 
-- A snip
+- A Snippet of Inference Code
 ```bash
 from utils import *
 from PIL import Image
