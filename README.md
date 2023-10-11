@@ -80,7 +80,7 @@ python test_torchscript.py \
        --out_vis_file img_with_pal.jpg
 ```
 
-- Alternatively, a Snippet of Inference Code
+- Alternatively, a snippet of inference on a single image
 ```
 from utils import *
 from PIL import Image
@@ -96,7 +96,7 @@ img_tensor = prepare_input(np.array(Image.open(img_file).resize((512, 512))), de
 pal = model(img_tensor).cpu().data.numpy()[0][0] # prediction: Perceptual Artifacts Localization (PAL)
 ```
 
-- Test over All Test Images
+- Test over all test images
 ```bash
 python test_torchscript_all.py
 ```
@@ -163,7 +163,7 @@ This work is inspired by our previous ECCV 22' paper:
 
 ## Acknowledgement
 
-We thank all the authors who open-sourced the research codes, which enables us to generate the images. 
+We thank the authors who open-sourced the research codes, which enables us to generate the images. 
 
 StyleGAN: 
 
