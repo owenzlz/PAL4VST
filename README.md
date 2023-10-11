@@ -17,6 +17,7 @@ This paper presents a comprehensive study of Perceptual Artifacts Localization o
 
 **Table of Contents:**<br>
 1. [Setup](#setup) - download pretrained models and resources
+2. [Test Images](#test_images) - quick usage with torchscript
 2. [Quick Usage](#quick_usage) - quick usage with torchscript
 3. [Datasets](#datasets) - download our train/val/test artifacts datasets (coming soon)
 4. [Checkpoints](#checkpoints) - download the checkpoints for all our models (coming soon)
@@ -48,10 +49,11 @@ pip install -v -e .
 ```
 For more information, please feel free to refer to MMSegmentation: https://mmsegmentation.readthedocs.io/en/latest/
 
+<a name="test_images"/>
 
 ## Test images
 
-We randomly sampled ten test images per synthesis tasks, in case you want to quickly try it out. Please check "./demo_test_data".
+We randomly sampled 10 test images per synthesis tasks, in case you want to quickly try it out. Please check "./demo_test_data".
 
 ```bash
 - demo_test_data
@@ -76,6 +78,21 @@ python test_torchscript.py \
        --torchscript_file ./deployment/pal4vst/swin-large_upernet_unified_512x512/end2end.pt \
        --out_pal_file pal.png \
        --out_vis_file img_with_pal.jpg
+```
+
+- A snip
+```bash
+from utils import *
+from PIL import Image
+import numpy as np 
+import torch
+
+
+device = 0
+model = torch.load('./deployment/pal4vst/swin-large_upernet_unified_512x512/end2end.pt').to(args.device)
+img = np.array(Image.open('./demo_test_data/stylegan2_ffhq/images/seed0417.jpg').resize((512, 512)))
+img_tensor = prepare_input(img, device)
+pal = model(img_tensor)
 ```
 
 Note: This checkpoint is trained on the unified data, and produces reasonable predictions to all synthesis tasks, except for shadow removal which requires a specialist model as reported in the paper. Specialist checkpoints will come soon. 
