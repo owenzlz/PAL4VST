@@ -87,7 +87,6 @@ from PIL import Image
 import numpy as np 
 import torch
 
-
 device = 0
 torchscript_file = './deployment/pal4vst/swin-large_upernet_unified_512x512/end2end.pt'
 img_file = './demo_test_data/stylegan2_ffhq/images/seed0417.jpg'
