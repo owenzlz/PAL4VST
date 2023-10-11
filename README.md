@@ -107,8 +107,8 @@ python test_torchscript_all.py
 ## Checkpoints
 Coming soon!
 
-| Name | Torchscript | Pytorch |
-|--------|--------|--------|
+| Model Name | Torchscript | Pytorch |
+|:--------:|:--------:|:--------:|
 | anyresgan | Value2a | Value3a |
 | cvton | Value2b | Value3b |
 | unified | Value2b | Value3b |
@@ -118,11 +118,11 @@ Coming soon!
 Coming soon!
 
 
-## Downstream Application - Artifacts Refinement
+## Application 1 - Artifacts Refinement
 Coming soon!
 
 
-## Downstream Application - Image Curation
+## Application 2 - Image Curation
 Coming soon!
 
 
