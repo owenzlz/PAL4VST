@@ -56,7 +56,7 @@ For more information, please feel free to refer to MMSegmentation: https://mmseg
 
 ## Test images
 
-We randomly sampled 10 test images per synthesis tasks, in case you want to quickly try it out. Please check "./demo_test_data". The conditional inputs (i.e. prompt/edge/segmentation) are included if any. 
+We randomly sampled 10 test images per synthesis tasks, in case you want to quickly try it out. Please check "./demo_test_data". The conditional inputs (i.e. prompt/edge/etc.) are included if any. 
 
 ```bash
 - demo_test_data
