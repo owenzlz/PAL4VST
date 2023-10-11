@@ -162,3 +162,9 @@ This work is inspired by our previous work:
 ```
 
 ## Acknowledgement
+
+We thank all the authors who their open-sourced research codes, which we used to generate the training data for this paper. 
+
+StyleGAN: 
+StyleGAN-Human:
+Latent Diffusion Models: 
