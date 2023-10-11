@@ -136,7 +136,7 @@ An examplar training command line (multi-GPU training)
 
 **Note**: All checkpoints are trained in MMSeg 0x codebase. We haven't retrained/reproduced the models after the codebase update (MMSeg 0x &rarr; MMSeg 1x).
 
-### Citation
+## Citation
 If you use this code for your research, please cite our paper:
 ```
 @InProceedings{Zhang_2023_ICCV,
@@ -149,5 +149,16 @@ If you use this code for your research, please cite our paper:
 }
 ```
 
+This work is inspired by our previous work: 
+```bash
+@inproceedings{zhang2022perceptual,
+  title={Perceptual artifacts localization for inpainting},
+  author={Zhang, Lingzhi and Zhou, Yuqian and Barnes, Connelly and Amirghodsi, Sohrab and Lin, Zhe and Shechtman, Eli and Shi, Jianbo},
+  booktitle={European Conference on Computer Vision},
+  pages={146--164},
+  year={2022},
+  organization={Springer}
+}
+```
 
-
+## Acknowledgement
