@@ -113,8 +113,8 @@ We only released the 'unified' and 'shadow removal' checkpoints, due to extensiv
 
 | Model Name | Torchscript | Pytorch |
 |:--------:|:--------:|:--------:|
-| unified | Value2b | Value3b |
-| shadow removal | Value2b | Value3b |
+| unified | TODO | TODO |
+| shadow removal | TODO | TODO |
 
 
 ## Datasets
@@ -135,7 +135,7 @@ python refine_artifacts.py \
        --high_noise_frac 0.5
 ```
 
-**Note**: In the paper, we tried DALL-E 2 inpainter, which gives better results. However, since DALL-E 2 not free, we offer SD-XL as an alternative option. 
+**Note**: In the paper, we tried DALL-E 2 inpainter, which gives better results. However, since DALL-E 2 is not free, we offer SD-XL as an alternative option here. 
 
 ## Application 2 - Image Curation
 
@@ -154,15 +154,19 @@ An examplar training command line (multi-GPU training)
 ./tools/dist_train.sh configs/pal4vst/swin-large_upernet_unified_512x512.py 8 --work-dir work_dirs/pal4vst/swin-large_upernet_unified_512x512
 ```
 
+**Note**: All checkpoints are trained in MMSeg 0x codebase. We haven't retrained/reproduced the models after the codebase update (MMSeg 0x &rarr; MMSeg 1x).
+
 ## Testing 
 
 Inference using Pytorch model (which should have similar performance to Torchscript model). 
 
 ```bash
-
+python test.py \
+       --config_file work_dirs/pal4vst/convnext-large_upernet_unified1_512x512/convnext-large_upernet_unified1_512x512.py \
+       --checkpoint_file work_dirs/pal4vst/convnext-large_upernet_unified1_512x512/best_mIoU_iter_6500.pth \
+       --img_dir ../data/pal4vst/demo_test_data/stylegan2_ffhq/images \
+       --seg_dir ../data/pal4vst/demo_test_data/stylegan2_ffhq/images_with_pal
 ```
-
-**Note**: All checkpoints are trained in MMSeg 0x codebase. We haven't retrained/reproduced the models after the codebase update (MMSeg 0x &rarr; MMSeg 1x).
 
 ## Citation
 If you use this code for your research, please cite our paper:
