@@ -74,16 +74,8 @@ We randomly sampled 10 test images per synthesis tasks, in case you want to quic
 Download torchscript checkpoint
 ([swin-large_upernet_unified_512x512](https://drive.google.com/file/d/1alICAkY8sjr-gwWknAEQjIKDkdPUPyKd/view?usp=sharing)), and place it under ./deployment/pal4vst/swin-large_upernet_unified_512x512/. 
 
-- Quick Inference with torchscript
-```bash
-python test_torchscript.py \
-       --img_file ./demo_test_data/stylegan2_ffhq/images/seed0417.jpg \
-       --torchscript_file ./deployment/pal4vst/swin-large_upernet_unified_512x512/end2end.pt \
-       --out_pal_file pal.png \
-       --out_vis_file img_with_pal.jpg
-```
 
-- Alternatively, a snippet of inference on a single image
+- A snippet of inference on a single image
 ```
 from utils import *
 from PIL import Image
@@ -97,6 +89,15 @@ img_file = './demo_test_data/stylegan2_ffhq/images/seed0417.jpg'
 model = torch.load(torchscript_file).to(device)
 img_tensor = prepare_input(np.array(Image.open(img_file).resize((512, 512))), device)
 pal = model(img_tensor).cpu().data.numpy()[0][0] # prediction: Perceptual Artifacts Localization (PAL)
+```
+
+- Alternatively, quick inference with torchscript
+```bash
+python test_torchscript.py \
+       --img_file ./demo_test_data/stylegan2_ffhq/images/seed0417.jpg \
+       --torchscript_file ./deployment/pal4vst/swin-large_upernet_unified_512x512/end2end.pt \
+       --out_pal_file pal.png \
+       --out_vis_file img_with_pal.jpg
 ```
 
 - Test over all images in demo_test_data folder
@@ -141,7 +142,7 @@ python refine_artifacts.py \
 
 Given a folder of generated images, our PAL model can rank their quality using the area of detected artifacts region. 
 
-Rank a folder of images
+Rank the quality for a set of StyleGAN-ffhq images 
 ```bash
 
 ```
