@@ -7,7 +7,7 @@ import argparse
 import torch
 import cv2
 import pdb
-
+import os 
 
 
 if __name__ == '__main__':
@@ -21,6 +21,8 @@ if __name__ == '__main__':
     parser.add_argument('--high_noise_frac', type=float, default=0.5)
     parser.add_argument('--alpha', type=float, default=0.3)
     args = parser.parse_args()
+    
+    os.makedirs(os.path.dirname(args.out_refine_file), exist_ok = True)
     
     # load SD-XL inpainter (base + refiner)
     base = StableDiffusionXLInpaintPipeline.from_pretrained(

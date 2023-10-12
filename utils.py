@@ -1,3 +1,4 @@
+from PIL import Image, ImageDraw, ImageFont
 import torch.nn.functional as F
 from PIL import Image
 import numpy as np 
@@ -48,3 +49,22 @@ def prepare_input(img, device):
     img_tensor = img_tensor - mean_img_tensor
     img_tensor = img_tensor * stdinv_img_tensor
     return img_tensor
+
+def draw_text_on_image(image_path, text, scale):
+    # Open an image file
+    with Image.open(image_path) as img:
+        width, height = img.size
+
+        # Determine the size of the text based on the image size and scale
+        text_size = int(min(width, height) * scale)
+        # Use a truetype font from PIL, adjust the path to the font file as needed
+        # Here we're using the DejaVuSans which is typically installed with matplotlib
+        font = ImageFont.truetype("DejaVuSans.ttf", text_size)
+        # Create a draw object
+        draw = ImageDraw.Draw(img)
+        # Determine text position
+        text_position = (20, 0) # horizontal, vertical
+        # Add text to image
+        draw.text(text_position, text, font=font, fill=(255, 105, 180))
+
+    return img

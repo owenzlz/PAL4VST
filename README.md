@@ -129,11 +129,9 @@ We implemented SD-XL inpainter to refine artifacts detected by our PAL model.
 Refine artifacts (PAL) with SD-XL inpainter
 ```bash
 python refine_artifacts.py \
-       --img_file ./demo_test_data/mask2image/images/000000483531.jpg \
        --torchscript_file ./deployment/pal4vst/swin-large_upernet_unified_512x512/end2end.pt \
-       --out_refine_file refine.jpg \
-       --num_inference_steps 75 \
-       --high_noise_frac 0.5
+       --img_file ./demo_test_data/mask2image/images/000000483531.jpg \
+       --out_refine_file ./demo_results/refine.jpg
 ```
 
 **Note**: In the paper, we tried DALL-E 2 inpainter, which gives better results. However, since DALL-E 2 is not free, we offer SD-XL as an alternative option here. 
@@ -145,8 +143,9 @@ Given a folder of generated images, our PAL model can rank their quality using t
 Rank the quality for a set of images. The prefix in the output folder indicates the rank.  
 ```bash
 python curate_images.py \
-       --input_dir xxx \
-       --output_dir xxx
+       --torchscript_file ./deployment/pal4vst/swin-large_upernet_unified_512x512/end2end.pt \
+       --input_img_dir ./demo_test_data/stylegan2_ffhq/images \
+       --rank_img_dir ./demo_results/stylegan2_ffhq_rank
 ```
 
 
