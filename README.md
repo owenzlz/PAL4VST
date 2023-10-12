@@ -8,7 +8,7 @@
 *International Conference on Computer Vision (ICCV), 2023*\
 Lingzhi Zhang, Zhengjie Xu, Connelly Barnes, Yuqian Zhou, Qing Liu, He Zhang, Sohrab Amirghodsi, Zhe Lin, Eli Shechtman, Jianbo Shi
 
-This paper presents a comprehensive study of Perceptual Artifacts Localization on multiple synthesis tasks. 
+This paper presents a study of Perceptual Artifacts Localization on multiple synthesis tasks. 
 
 ## Prerequisites
 - Linux
@@ -118,10 +118,6 @@ We only released the 'unified' and 'shadow removal' checkpoints, due to extensiv
 | shadow removal | TODO | TODO |
 
 
-## Datasets
-Coming soon!
-
-
 ## Application 1 - Artifacts Refinement
 
 We implemented SD-XL inpainter to refine artifacts detected by our PAL model. 
@@ -149,6 +145,11 @@ python curate_images.py \
        --input_img_dir ./demo_test_data/stylegan2_ffhq/images \
        --rank_img_dir ./demo_results/stylegan2_ffhq_rank
 ```
+
+
+## Datasets
+Coming soon!
+
 
 
 ## Training
