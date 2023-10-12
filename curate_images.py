@@ -22,7 +22,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
     
     os.makedirs(args.rank_img_dir, exist_ok = True)
-
+    
     # load PAl model
     model = torch.load(args.torchscript_file).to(args.device)
 

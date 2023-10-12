@@ -49,7 +49,7 @@ if __name__ == '__main__':
     img_with_pal = img * (1 - pal_np[:,:,None]) + args.alpha * pink * pal_np[:,:,None] + (1 - args.alpha) * img * pal_np[:,:,None]
     
     # refine artifacts with SD-XL inpainter
-    prompt = 'a clean photo'
+    prompt = 'a photo of clean bedroom'
     kernel = np.ones((5,5), np.uint8)
     pal_np = cv2.dilate(pal_np.astype(np.uint8), kernel, iterations = 5) * 255.0
     

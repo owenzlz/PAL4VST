@@ -140,7 +140,7 @@ python refine_artifacts.py \
 
 Given a folder of generated images, our PAL model can rank their quality using the area of detected artifacts region. 
 
-Rank the quality for a set of images. The prefix in the output folder indicates the rank.  
+Rank the quality for a set of images. 
 ```bash
 python curate_images.py \
        --torchscript_file ./deployment/pal4vst/swin-large_upernet_unified_512x512/end2end.pt \
