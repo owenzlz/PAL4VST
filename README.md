@@ -142,9 +142,11 @@ python refine_artifacts.py \
 
 Given a folder of generated images, our PAL model can rank their quality using the area of detected artifacts region. 
 
-Rank the quality for a set of StyleGAN-ffhq images 
+Rank the quality for a set of images. The prefix in the output folder indicates the rank.  
 ```bash
-
+python curate_images.py \
+       --input_dir xxx \
+       --output_dir xxx
 ```
 
 
