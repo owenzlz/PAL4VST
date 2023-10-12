@@ -138,6 +138,8 @@ python refine_artifacts.py \
 
 Given a folder of generated images, our PAL model can rank their quality using the area of detected artifacts region. 
 
+<img src="https://github.com/owenzlz/PAL4VST/blob/project_page/resources/curate_images.gif" style="width:800px;">
+
 Rank the quality for a set of images. 
 ```bash
 python curate_images.py \
