@@ -126,6 +126,8 @@ Coming soon!
 
 We implemented SD-XL inpainter to refine artifacts detected by our PAL model. 
 
+<img src="https://github.com/owenzlz/PAL4VST/blob/project_page/resources/refine_artifacts.gif" style="width:800px;">
+
 Refine artifacts (PAL) with SD-XL inpainter
 ```bash
 python refine_artifacts.py \
