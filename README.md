@@ -204,9 +204,9 @@ This work is inspired by our previous ECCV 22' paper:
 
 We thank the authors who open-sourced the research codes, which enables us to generate the images. 
 
-StyleGAN: 
+StyleGAN: [https://github.com/NVlabs/stylegan3](https://github.com/NVlabs/stylegan3)
 
-StyleGAN-Human:
+StyleGAN-Human: [https://github.com/stylegan-human/StyleGAN-Human](https://github.com/stylegan-human/StyleGAN-Human)
 
 Latent Diffusion Models: 
 
