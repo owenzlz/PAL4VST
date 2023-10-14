@@ -204,9 +204,18 @@ This work is inspired by our previous ECCV 22' paper:
 
 We thank the authors who open-sourced the research codes, which enables us to generate the images. 
 
-StyleGAN: [https://github.com/NVlabs/stylegan3](https://github.com/NVlabs/stylegan3)
-
+StyleGAN: [https://github.com/NVlabs/stylegan3](https://github.com/NVlabs/stylegan3)       
 StyleGAN-Human: [https://github.com/stylegan-human/StyleGAN-Human](https://github.com/stylegan-human/StyleGAN-Human)
 
-Latent Diffusion Models: 
+Latent Diffusion Models: [https://github.com/CompVis/latent-diffusion](https://github.com/CompVis/latent-diffusion)
+Anyresgan: [https://github.com/chail/anyres-gan](https://github.com/chail/anyres-gan)
+Real-ESRGAN: []
+PITI: 
+DALL-E 2:
+Stable Diffusion: 
+Latent Composition:
+CVTon: 
+Portrait Shadow:
+LaMa: 
+CoMod-GAN: 
 
