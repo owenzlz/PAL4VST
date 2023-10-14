@@ -202,20 +202,19 @@ This work is inspired by our previous ECCV 22' paper:
 
 ## Acknowledgement
 
-We thank the authors who open-sourced the research codes, which enables us to generate the images. 
+We thank the authors who open-sourced the research codes/data, which enables us to generate the images. 
 
 StyleGAN: [https://github.com/NVlabs/stylegan3](https://github.com/NVlabs/stylegan3)       
-StyleGAN-Human: [https://github.com/stylegan-human/StyleGAN-Human](https://github.com/stylegan-human/StyleGAN-Human)
-
-Latent Diffusion Models: [https://github.com/CompVis/latent-diffusion](https://github.com/CompVis/latent-diffusion)
-Anyresgan: [https://github.com/chail/anyres-gan](https://github.com/chail/anyres-gan)
-Real-ESRGAN: []
-PITI: 
-DALL-E 2:
-Stable Diffusion: 
-Latent Composition:
-CVTon: 
-Portrait Shadow:
-LaMa: 
-CoMod-GAN: 
+StyleGAN-Human: [https://github.com/stylegan-human/StyleGAN-Human](https://github.com/stylegan-human/StyleGAN-Human)   
+Latent Diffusion Models: [https://github.com/CompVis/latent-diffusion](https://github.com/CompVis/latent-diffusion)    
+Anyresgan: [https://github.com/chail/anyres-gan](https://github.com/chail/anyres-gan)      
+Real-ESRGAN: [https://github.com/xinntao/Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN)     
+PITI: [https://github.com/PITI-Synthesis/PITI](https://github.com/PITI-Synthesis/PITI)     
+DALL-E 2: [https://openai.com/product](https://openai.com/product)    
+Stable Diffusion: [https://github.com/huggingface/diffusers](https://github.com/huggingface/diffusers)   
+Latent Composition: [https://github.com/chail/latent-composition](https://github.com/chail/latent-composition)  
+CVTon: [https://github.com/benquick123/C-VTON](https://github.com/benquick123/C-VTON)
+Portrait Shadow: [https://ceciliavision.github.io/project-pages/portrait](https://ceciliavision.github.io/project-pages/portrait)
+LaMa: [https://github.com/advimman/lama](https://github.com/advimman/lama)
+CoMod-GAN: [https://github.com/zsyzzsoft/co-mod-gan](https://github.com/zsyzzsoft/co-mod-gan)
 
