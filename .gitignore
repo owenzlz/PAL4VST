@@ -2,6 +2,7 @@
 *.pth
 
 /data
+/kate_test_data
 
 /mmsegmentation/pretrain
 /mmsegmentation/work_dirs
@@ -36,4 +37,5 @@ copy_files_from_AdobePAL.sh
 
 debug.py
 
-
+kate_test_data.zip
+/kate_test_data
