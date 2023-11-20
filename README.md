@@ -114,8 +114,9 @@ We only released the 'unified' and 'shadow removal' checkpoints, due to extensiv
 
 | Model Name | Torchscript | Pytorch |
 |:--------:|:--------:|:--------:|
-| unified | TODO | TODO |
-| shadow removal | TODO | TODO |
+| unified | [unified_torchscript](https://drive.google.com/file/d/1bGjEKquWa4cZJ6v52NoRfViwKK15U7vd/view?usp=sharing) | [unified_pytorch](https://drive.google.com/file/d/1414RYir0Q58Ix2CKrZoDmA5iilx8Gopb/view?usp=sharing) |
+| stylegan2 | [stylegan2_torchscript](https://drive.google.com/file/d/1FYId9CSmP0rEE1c-2E7aGaPD0WuRdX6o/view?usp=sharing) | [stylegan2_pytorch](https://drive.google.com/file/d/1sHWQLwpt1eM36ttjdIdXLQIuLYftJoWR/view?usp=sharing) |
+| shadow removal | [shadow_torchscript](https://drive.google.com/file/d/1omx3lhYNRjJiPY49HoknVUwiy-J0uxcr/view?usp=sharing) | [shadow_pytorch](https://drive.google.com/file/d/1AOuSwSFwN5X1u6SYni8KehhjFquBpJ6Q/view?usp=sharing) |
 
 
 ## Application 1 - Artifacts Refinement
