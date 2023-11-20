@@ -151,8 +151,8 @@ python curate_images.py \
 
 
 ## Datasets
-Coming soon!
 
+The dataset for each synthesis tasks can be downloaded here: [specific_tasks.zip](https://drive.google.com/file/d/1h2geaBGrQVNKrjNPUs0oWdE5vXhdwTn_/view?usp=sharing). Altenatively, you can download the merged dataset from all tasks here: [unified_task.zip](https://drive.google.com/file/d/1l9o3dlUjt0LC30oM7344p6Z4iDFIKENC/view?usp=sharing). 
 
 
 ## Training
